@@ -1,0 +1,5 @@
+
+{
+  "name": "TrafficSense",
+  "description": "An AI-powered web application to analyze traffic conditions from a sequence of images. It uses the Gemini API to count vehicles, determine congestion trends, detect ambulances, and estimate clearance times."
+}

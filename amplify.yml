@@ -1,0 +1,23 @@
+version: 1
+applications:
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - npm ci
+        build:
+          commands:
+            - npm run build
+      artifacts:
+        baseDirectory: dist
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/
+  - backend:
+      phases:
+        build:
+          commands:
+            - echo "Backend deployment configured"
+            - echo "Lambda function should be deployed separately via Amplify CLI or Console"
